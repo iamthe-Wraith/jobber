@@ -1,2 +1,18 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<script lang="ts">
+	import type { PageData } from "./$types";
+
+    export let data: PageData;
+</script>
+
+<svelte:head>
+    <title>Jobber</title>
+</svelte:head>
+
+{#each data.resources as resource}
+    <a href={resource.url} target="_blank">
+        <div>
+            <h2>{resource.name}</h2>
+            <p>{resource.description}</p>
+        </div>
+    </a>
+{/each}
