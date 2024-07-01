@@ -12,7 +12,7 @@
     <h1>Find Your Next Job!</h1>
 
     <p>Below is a collection of job hunting resources I've collected and wanted to share with people like you.</p>
-    <p>Good lunch in your job search!</p>
+    <p>Good luck in your job search!</p>
 
     <div class="resources">
         {#each data.resources as resource}
