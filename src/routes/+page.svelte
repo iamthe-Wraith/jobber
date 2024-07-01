@@ -63,10 +63,6 @@
         }
     }
 
-    .resource h2 {
-        margin-bottom: 0.5rem;
-    }
-
     .resource p {
         margin: 0;
         text-align: center;
