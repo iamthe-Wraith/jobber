@@ -1,0 +1,7 @@
+services:
+  app:
+    image: iamthewraith/jobber:latest
+    restart: always
+    container_name: jobber
+    ports:
+      - "3003:3000"
