@@ -14,6 +14,12 @@ export const load: ServerLoad = async () => {
             type: ResourceTypes.Board,
         },
         {
+            name: 'awesome-job-boards',
+            url: 'https://github.com/tramcar/awesome-job-boards?tab=readme-ov-file',
+            description: 'A curated list of job boards.',
+            type: ResourceTypes.Board,
+        },
+        {
             name: 'Berlin Startup Jobs',
             url: 'https://berlinstartupjobs.com/',
             description: 'Find jobs at startups in Berlin.',
