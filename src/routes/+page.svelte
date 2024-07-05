@@ -1,12 +1,9 @@
 <script lang="ts">
-	import type { PageData } from "./$types";
+    import type { PageData } from "./$types";
+	import { PortableText } from "@portabletext/svelte";
 
     export let data: PageData;
 </script>
-
-<svelte:head>
-    <title>Jobber</title>
-</svelte:head>
 
 <div class="container">
     <h1>Find Your Next Job!</h1>
@@ -22,7 +19,13 @@
                 class="resource"
             >
                 <p class="h5">{resource.name}</p>
-                <p>{resource.description}</p>
+
+                {#if resource.description}
+                    <PortableText
+                        value={resource.description}
+                        components={{}}
+                    />
+                {/if}
             </a>
         {/each}
     </div>
